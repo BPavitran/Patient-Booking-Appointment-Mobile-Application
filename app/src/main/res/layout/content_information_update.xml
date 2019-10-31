@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidlogin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InformationUpdate"
+    tools:showIn="@layout/app_bar_information_update">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="82dp"
+        android:text="Age"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Change here"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAge"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Address"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAge"
+        android:layout_alignStart="@+id/txtAge"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="Change here"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="167dp"
+        android:text="City"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignStart="@+id/txtAge"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:ems="10"
+        android:hint="Change here"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="213dp"
+        android:text="Email"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="259dp"
+        android:text="Phone Number"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:layout_alignStart="@+id/txtAge"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="Change here"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignEnd="@+id/txtAge"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint="Change here"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/button_round"
+        android:onClick="onUpdate"
+        android:text="Update"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
